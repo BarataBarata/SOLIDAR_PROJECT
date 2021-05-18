@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="80dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/cardview">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/foto1"
+                android:id="@+id/imageview1"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+       <TextView
+           android:id="@+id/texto_nome"
+           android:layout_width="230dp"
+           android:layout_height="30dp"
+           android:text="Barata"
+           android:textSize="20sp"
+           android:textColor="@color/black"
+           android:layout_toRightOf="@+id/cardview"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="20dp">
+
+       </TextView>
+
+        <TextView
+            android:id="@+id/texto_hora"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="10:20pm"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/texto_idade"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="Idade : "
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_below="@+id/texto_nome"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/idade"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Idade"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_below="@+id/texto_nome"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/texto_nome"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/cardview"
+            android:text="Dilatacao :"
+            android:textColor="#3F51B5"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dilatacao"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="valor"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_below="@+id/texto_nome"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/texto_traco"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_below="@+id/texto_idade"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

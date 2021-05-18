@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#350909"
+    tools:context=".Fragment2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Registo de Parturientes"
+
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/id_dilatacao"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="Dilatacao ;"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_idade_registo"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:hint="Idade :"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_nome"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Nome :"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/id_apelido"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="Apelido :"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/id_button_adduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="160dp"
+        android:fadeScrollbars="true"
+        android:textSize="15dp"
+        android:text="Registar" />
+
+</FrameLayout>

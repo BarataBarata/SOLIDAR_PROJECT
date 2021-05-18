@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment1">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/botao_navegacao"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/white"
+        android:background="?android:attr/windowBackground">
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="70dp"
+            android:showAsAction="always"
+            android:title="Procurar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/button"
+            android:text="Notificacoes " />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+    <FrameLayout
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/botao_navegacao">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicle_notificacao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </FrameLayout>
+
+
+
+</FrameLayout>
